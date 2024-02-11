@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    
+}
+#right{
+    height: 100%;
+    width: 60%;
+ 
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: gray;
+    display: flex;
+}
+#rbottom{
+    height: 50%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1516048015710-7a3b4c86be43?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+   background-size: cover;
+    
+   
+}
+#rtop1{
+    height: 100%;
+    width: 55%;
+    background-image: url(https://images.unsplash.com/photo-1509587584298-0f3b3a3a1797?q=80&w=1913&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+
+}
+#rtop2{
+    height: 100%;
+    width: 45%;
+   background-image: url(https://images.unsplash.com/photo-1695710765217-9443fb6e3494?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-position: center;
+   background-size: cover;
+
+}
+#lnav{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#rnav{
+    display: flex;
+    
+    align-items: center;
+}
+#rnav a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+
+}
+#rnav svg{
+    color: black
+}
+#textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 100px;
+    font-weight: 900;
+}
+#textcenter p{
+    font-size:18px;
+    opacity: .6;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px  solid black;
+    padding-bottom: 5px;
+    font-weight: 600;
+    font-size: 13px;
+    opacity: .6;
+}
+#rnav a:hover{
+    
+    transition: ease-in;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.467);
+
+
+}
+@media(max-width:700px) 
+{
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+    
+}
